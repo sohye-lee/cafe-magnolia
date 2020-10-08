@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@200;300;400&family=Cormorant+Garamond:wght@300;500&family=Lato:wght@300&family=Libre+Baskerville&family=Homemade+Apple&display=swap&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poiret+One&display=swap&family=Josefin+Slab:wght@100;300;400;600;700&display=swap&family=Open+Sans%3A300%2C400%2C600%2C700%7CPlayfair+Display%3A300%2C400%2C600%2C700%7CRaleway%3A300%2C400%2C600%2C700%7COpen+Sans%3A300%2C400%2C600%2C700&#038;subset=latin-ext&#038;ver=1.0.0' type='text/css' media='all' />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Magnolia of Vienna, VA</title>
+</head>
+<body>
+    <!-----------------  Start : Navbar ----------------->
+    <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">MAGNOLIA</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarItems" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarItems">
+                <ul class="nav navbar-nav mr-auto">
+                    <li class="nav-item active mr-3">
+                    <a class="nav-link" href="#location">Hours & Location </a> 
+                    </li>
+                    <li class="nav-item active mr-3">
+                        <a class="nav-link" href="#menu">Menu  </a> 
+                    </li>
+                    <li class="nav-item active mr-3">
+                        <a class="nav-link" href="#concept">Concept  </a>
+                    </li>
+                </ul>
+                
+                <ul class="nav navbar-nav navbar-right ml-auto">
+                    <li class="nav-item active mr-3">
+                        <a href="#instagram" class="nav-link"><i class="fa fa-lg fa-instagram"></i></a>
+                    </li>
+                    <li class="nav-item active mr-3">
+                        <a class="nav-link" href="" data-toggle="modal" data-target="#contactModal">Contact Us</a> 
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="menu.pdf" download="menu.pdf">Download Menu</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-----------------  End : Navbar ----------------->
+
+
+    <!-----------------  Start : Contact Modal ----------------->
+    <div id="contactModal" class="modal fade bd-example-modal-lg" role="dialog">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-white" id="contactModalHeader">
+                    <h4 class="modal-title">Contact Us</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12 mx-auto">
+                            <form>
+                                <div class="form-group row">
+                                    <label for="firstName" class="col-md-3 col-form-label">First Name</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="lastName" class="col-md-3 col-form-label">Last Name</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="email" class="col-md-3 col-form-label">Email</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" id="email" name="email" placeholder="Email Address">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="areaCode" class="col-2 col-form-label">Tel.</label>
+                                    <div class="col-3 px-0">
+                                        <input id="areaCode" class="form-control" type="tel" name="areaCode" placeholder="Area Code" />
+                                    </div>
+                                    <div class="col-7">
+                                        <input type="tel" class="form-control" name="telNum" placeholder="Tel. Number" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col">
+                                        May we contact you ? 
+                                        <div class="form-check form-check-inline ml-4">
+                                            <input type="radio" id="contactYes" class="form-check-input" name="contactCheck" value="yes">
+                                            <label for="contactYes" class="form-check-label">Yes</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input type="radio" id="contactNo" class="form-check-input" name="contactCheck" value="No">
+                                            <label for="contactNo" class="form-check-label">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-12">
+                                        <label for="comment" class="col-12 col-form-label px-0">Comment or Message</label>
+                                        <div class="col-12 px-0">
+                                            <textarea class="form-control" name="comment" id="comment" cols="30" rows="6" placeholder="Your comments"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-12">
+                                        <button class="btn btn-dark btn-lg btn-block">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------  End : Contact Modal ----------------->
+
+
+    <!-----------------  Start : First Page ----------------->
+    <section id="front">
+        <div class="container-fluid my-auto mx-auto" id="main-title">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="display-4 block">
+                        <p class="my-5">Life Is Uncertain.</p>
+                        <p class="my-5">Eat Dessert First.</p>
+                    </h1>
+                </div>
+                <div class="col-12 text-right">
+                    <h3 class="display-6 block">- Ernestine Ulmer</h3>
+                </div>
+            </div>
+           
+        </div>
+        <div class="float-right mr-3" id="page-bottom">     
+            <a href="tel:+17032685481">+1.703.268.5481</a>
+            <span> | </span>
+            <a role="button" href="https://www.google.com/maps/place/Magnolia+Dessert+Bar+%26+Coffee/@38.895378,-77.275501,17z/data=!3m1!4b1!4m5!3m4!1s0x89b64bc314ea4a5f:0xa9b96d86e1314f04!8m2!3d38.895378!4d-77.273307" class="btn btn-link" target="_blank">431 Maple Ave W, Vienna, VA 22180</a>
+        </div>
+    </section>
+
+    <!-----------------  End : First Page ----------------->
+
+
+    <!-----------------  Start : Concept Page ----------------->
+    <section id="concept">
+        <div class="row">
+            <div class="col-lg-6" id="conceptText">
+                <div class="row">
+                    <div class="col-12" id="conceptTextTitle">
+                        <h2 class="display-4">WE BAKE DELICIOUS MEMORIES</h2>
+                    </div>
+                    <div class="col-12">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore laudantium placeat est illum 
+                            odit provident aliquam, vero dolores laborum rerum, modi, ducimus fugiat quo voluptatibus dolor
+                                nesciunt amet id architecto!</p>
+                        <img id="signature" src="img/signature.png" class="px-0 mx-0" alt="Signature">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 d-none d-md-block row" id="conceptImg">
+                <div class="col-9">
+                    <div id="carousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                          <li data-target="#carousel" data-slide-to="1"></li>
+                          <li data-target="#carousel" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img class="d-block w-100" src="img/food5.jpeg" alt="">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="img/food4.jpeg" alt="">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="img/cafe3.jpeg" alt="">
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-----------------  End : Concept Page ----------------->
+
+    <!-----------------  Start : Menu Page ----------------->
+    <section id="menu">
+        <div class="row text-center align-items-center">
+            <h1 class="display-3 col-12" id="menuHeader">OUR MENU</h1>
+            <div class="col-12 download-menu">
+                <a class="btn btn-lg text-none btn-light" href="menu.pdf" download="menu.pdf">Download Menu</a>
+            </div>
+        </div>
+        <div class="row align-items-center mx-5 d-none d-sm-flex" id="menuCards">
+            
+            <div class="col-md-6 col-lg-3 menuCard align-items-center">
+                <div class="card menus" id="card1">
+                    <a href="" data-toggle="modal" data-target="#breakfastModal">
+                        <img class="card-img-top" src="img/menucard6.jpeg" alt="Breakfast" id="breakfast">
+                        <div class="card-img-overlay align-items-center text-center">
+                            <h1 class="card-title">Breakfast</h1>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-3 menuCard align-items-center">
+                <div class="card menus" id="card2">
+                    <a href="" data-toggle="modal" data-target="#appetizerModal">
+                        <img class="card-img-top" src="img/menucard2.jpeg" alt="Appetizer & Entrée">
+                        <div class="card-img-overlay align-items-center text-center">
+                            <h1 class="card-title">Appetizer</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 menuCard align-items-center">
+                <div class="card menus" id="card3">
+                    <a href="" data-toggle="modal" data-target="#dessertModal">
+                        <img class="card-img-top" src="img/menucard3.jpeg" alt="Desesrt">
+                        <div class="card-img-overlay align-items-center text-center">
+                            <h1 class="card-title">Dessert</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 menuCard align-items-center">
+                <div class="card menus" id="card4">
+                    <a href="" data-toggle="modal" data-target="#drinksModal">
+                        <img class="card-img-top" src="img/menucard5.jpeg" alt="Drinks">
+                        <div class="card-img-overlay align-items-center text-center">
+                            <h1 class="card-title">Drinks</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-----------------  End : Menu Page ----------------->
+
+    <!-----------------  Start : Menu Modal ----------------->
+    <!-- *** breakfast menu -->
+    <div class="modal fade " id="breakfastModal" tabindex="-1" role="dialog" aria-labelledby="breakfastModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content menuModal">
+                <div class="modal-header px-auto align-items-center row">
+                    <h2 class="modal-title text-center col-10 offset-1" id="menuModalTitle">BREAKFAST</h2>
+                    <button type="button" class="close col-1 text-white" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="text-center mb-3">CROISSANT</h3>
+                        </div>
+                        <div class="col-md-6 row pl-5 mb-3">
+                            <div class="col-5">
+                                <img src="img/breakfast-1.png" alt="">
+                            </div>
+                            <div class="col-6 pl-5">
+                                <p>MORNING CROISSANT</p>
+                                <p>$4.75</p>
+                                <p>Sausage, Cheddar Omelet in Croissant</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 row mb-3">
+                            <div class="col-5">
+                                <img src="img/croissant2.jpg" alt="">
+                            </div>
+                            <div class="col-6 pl-5">
+                                <p>SPINACH & FETA CROISSANT</p>
+                                <p>$4.95</p>
+                                <p>Crumbled Feta Cheese and Spinach in Croissant</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="text-center mb-3">PASTRY</h3>
+                        </div>
+                        <div class="col-md-6 row pl-5 mb-3">
+                            <div class="col-5">
+                                <img src="img/muffin1.jpg" alt="">
+                            </div>
+                            <div class="col-6 pl-5">
+                                <p>TRIPLE CHEESE & CHIVES MUFFIN</p>
+                                <p>$3.50</p>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 row mb-3">
+                            <div class="col-5">
+                                <img src="img/muffin2.jpg" alt="">
+                            </div>
+                            <div class="col-6 pl-5">
+                                <p>MUSHROOMS GARLIC & PARMESAN MUFFIN</p>
+                                <p>$3.50</p>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 row pl-5 mb-3">
+                            <div class="col-5">
+                                <img src="img/muffin3.jpg" alt="">
+                            </div>
+                            <div class="col-6 pl-5">
+                                <p>TRIPLE CHEESE & CHIVES MUFFIN</p>
+                                <p>$3.50</p>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 row mb-3">
+                            <div class="col-5">
+                                <img src="img/muffin4.jpg" alt="">
+                            </div>
+                            <div class="col-6 pl-5">
+                                <p>MUSHROOMS GARLIC & PARMESAN MUFFIN</p>
+                                <p>$3.50</p>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 row pl-5 mb-3">
+                            <div class="col-5">
+                                <img src="img/muffin5.jpg" alt="">
+                            </div>
+                            <div class="col-6 pl-5">
+                                <p>BLUEBERRY MUFFIN</p>
+                                <p>$3.50</p>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 row mb-3">
+                            <div class="col-5">
+                                <img src="img/choccroissant.jpg" alt="">
+                            </div>
+                            <div class="col-6 pl-5">
+                                <p>CHOCOLATE CHIP CROISSANG</p>
+                                <p>$2.75</p>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="text-center mb-3">CRISPY CREPE</h3>
+                        </div>
+                        <div class="col-md-6 row pl-5 mb-3">
+                            <div class="col-5">
+                                <img src="img/crepe1.jpg" alt="">
+                            </div>
+                            <div class="col-6 pl-5">
+                                <p>THAI STYLE SWEET CHILI PASTE</p>
+                                <p>$6.95</p>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 row mb-3">
+                            <div class="col-5">
+                                <img src="img/crepe2.jpg" alt="">
+                            </div>
+                            <div class="col-6 pl-5">
+                                <p>SPINACH & CHEESE</p>
+                                <p>$6.75</p>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-lg " data-dismiss="modal">BACK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-----------------  End : Menu Modal ----------------->
+
+    <!-----------------  Start : Instagram Page ----------------->
+    <section id="instagram">
+        <div class="container">
+            <h1 class="display-4 text-center" id="instaHeader">
+                <p>
+                    LET'S SHARE DELIGHT MOMENTS
+                </p> 
+                <p>
+                    <a href="https://www.instagram.com/magnolia_of_vienna/"><i class="fa fa-instagram"></i></a>
+                </p>
+                <p id="instaAddress">@magnolia_of_vienna</p>
+            </h1>
+        </div>
+        <div class="container">
+            <div class="container-fluid">
+                <div class="row d-none d-sm-flex">
+                    <div class="card col-sm-6 col-md-4 col-lg-3">
+                        <img src="img/food4.jpeg" alt="" class="card-img-top">
+                    </div>
+                    <div class="card col-sm-6 col-md-4 col-lg-3">
+                        <img src="img/food2.jpeg" alt="" class="card-img-top">
+                    </div>
+                    <div class="card col-sm-6 col-md-4 col-lg-3">
+                        <img src="img/cafe1.jpeg" alt="" class="card-img-top">
+                    </div>
+                    <div class="card col-sm-6 col-md-4 col-lg-3">
+                        <img src="img/img-flowers.jpeg" alt="" class="card-img-top">
+                    </div>
+                    <div class="card col-sm-6 col-md-4 col-lg-3">
+                        <img src="img/cafe3.jpeg" alt="" class="card-img-top">
+                    </div>
+                    <div class="card col-sm-6 col-md-4 col-lg-3">
+                        <img src="img/food3.jpeg" alt="" class="card-img-top">
+                    </div>
+                    <div class="card col-sm-6 col-md-4 col-lg-3">
+                        <img src="img/food5.jpeg" alt="" class="card-img-top">
+                    </div>
+                    <div class="card col-sm-6 col-md-4 col-lg-3">
+                        <img src="img/menucard1.jpeg" alt="" class="card-img-top">
+                    </div>
+                    <div class="card col-sm-6 col-md-4 col-lg-3">
+                        <img src="img/menucard2.jpeg" alt="" class="card-img-top">
+                    </div>
+                    <div class="card col-sm-6 col-md-4 col-lg-3">
+                        <img src="img/menucard6.jpeg" alt="" class="card-img-top">
+                    </div>
+                    <div class="card col-sm-6 col-md-4 col-lg-3">
+                        <img src="img/menucard8.jpeg" alt="" class="card-img-top">
+                    </div>
+                    <div class="card col-sm-6 col-md-4 col-lg-3">
+                        <img src="img/cafe2.jpeg" alt="" class="card-img-top">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-----------------  Start : Location Page ----------------->
+    <section id="location">
+        <div class="row">
+            <div id="map" class="col-sm-6 z-depth-1-half map-container d-none d-sm-flex">
+                <iframe src="https://maps.google.com/maps?q=Magnolia+Dessert+Bar+%26+Coffee&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                  ></iframe>
+              </div>
+            <div class="col-sm-6 " id="addressHours">
+                <div class="row text-white" id="hours">
+                    <div class="col-12"><h2>WE ARE OPEN </h2></div>
+                    <div class="col-4 offset-1">
+                        <p>Sunday - Thursday </p>  
+                        <p>Friday - Saturday</p>    
+                    </div>
+                    <div class="col-7">
+                        <p>9:00 – 10:00</p>   
+                        <p>9:00 – 11:00</p>    
+                    </div>
+                </div>
+                <div class="row text-white" id="address">
+                    <div class="col-12">
+                        <h2>YOU CAN FIND US AT</h2>
+                    </div>
+                    <div class="col-12 offset-1">
+                        <a role="button" href="https://www.google.com/maps/place/Magnolia+Dessert+Bar+%26+Coffee/@38.895378,-77.275501,17z/data=!3m1!4b1!4m5!3m4!1s0x89b64bc314ea4a5f:0xa9b96d86e1314f04!8m2!3d38.895378!4d-77.273307_blank" class="btn btn-link" target="_blank">431 Maple Ave W, Vienna, VA 22180</a>
+                        <p><a href="tel:+17032685481"> <svg width="1.2em" height="1.2em" viewBox="0 0 16 16" class="bi bi-phone" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M11 1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+                            <path fill-rule="evenodd" d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                          </svg> +1.703.268.5481</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-----------------  End : Location Page ----------------->
+
+    <!-----------------  Start : Contact Page ----------------->
+    <section id="contact">
+        <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-8 mx-auto">
+                        <div class="display-3 mb-3 text-center" id="contactHeader">
+                            REACH US
+                        </div>
+                        <form>
+                            <div class="form-group row">
+                                <label for="firstName" class="col-md-3 col-form-label">First Name</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="lastName" class="col-md-3 col-form-label">Last Name</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="email" class="col-md-3 col-form-label">Email</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" id="email" name="email" placeholder="Email Address">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="areaCode" class="col-2 col-form-label">Tel.</label>
+                                <div class="col-3 px-0">
+                                    <input id="areaCode" class="form-control" type="tel" name="areaCode" placeholder="Area Code" />
+                                </div>
+                                <div class="col-7">
+                                    <input type="tel" class="form-control" name="telNum" placeholder="Tel. Number" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col">
+                                    May we contact you ? 
+                                    <div class="form-check form-check-inline ml-4">
+                                        <input type="radio" id="contactYes" class="form-check-input" name="contactCheck" value="yes">
+                                        <label for="contactYes" class="form-check-label">Yes</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" id="contactNo" class="form-check-input" name="contactCheck" value="No">
+                                        <label for="contactNo" class="form-check-label">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-12">
+                                    <label for="comment" class="col-12 col-form-label px-0">Comment or Message</label>
+                                    <div class="col-12 px-0">
+                                        <textarea class="form-control" name="comment" id="comment" cols="30" rows="6" placeholder="Your comments"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-12">
+                                    <button class="btn btn-dark btn-lg btn-block" id="contactButton">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <!-----------------  End : Contact Page ----------------->
+
+    <!-----------------  Start : Footer ----------------->
+
+    <footer class="site-footer">
+        <div class="container main">
+            <div class="row">
+                <div class="col-4 offset-2">
+                    <h4><strong>Shortcuts</strong></h4>
+                    <ul class="list-unstyled"> 
+                        <li><a href="#front">Home</a></li>
+                        <li><a href="#concept">Concept</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#location">Hours & Location</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 contact">
+                    <a role="button" href="tel:+17032685481" class="btn btn-link"><svg width="1.2em" height="1.2em" viewBox="0 0 16 16" class="bi bi-phone" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M11 1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+                        <path fill-rule="evenodd" d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                      </svg>+1.703.268.5481</a><br>
+                    <a role="button" href="mailto:magnoliava@gmail.com" class="btn btn-link"><i class="fa fa-envelope-o"></i> magnoliava@gmail.com</a><br>
+                    <a role="button" href="https://www.google.com/maps/place/Magnolia+Dessert+Bar+%26+Coffee/@38.895378,-77.275501,17z/data=!3m1!4b1!4m5!3m4!1s0x89b64bc314ea4a5f:0xa9b96d86e1314f04!8m2!3d38.895378!4d-77.273307_blank" class="btn btn-link" target="_blank">431 Maple Ave W, Vienna, VA 22180</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-2 offset-1 title">
+                <h3>MAGNOLIA</h3>
+            </div>
+            <div class="col-9">
+                <p>© 2020 Magnolia. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-----------------  End : Footer ----------------->
+
+
+
+
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src='index.js'></script>
+</body>
+</html>
